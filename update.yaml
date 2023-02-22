@@ -1,0 +1,10 @@
+---
+pool: 'default'
+trigger: 
+  - main
+jobs:
+  - job: a
+    steps:
+      - script: df -H
+      - script: echo "hello world"
+      - script: sudo apt update
